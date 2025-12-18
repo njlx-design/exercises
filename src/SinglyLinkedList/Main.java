@@ -7,7 +7,8 @@ public class Main {
         list.addLast(20);
         list.addFirst(10);
         list.addFirst(5);
-        list.removeFirst();
+        list.addAtPosition(40 , 3);
+        //list.removeFirst();
         list.display();
     }
 }
