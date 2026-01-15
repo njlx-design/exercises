@@ -1,12 +1,10 @@
-package CircularLinkedList;
+package CircalyLinkedList;
 
-
-
-public class CircularLinkedList<E> {
+public class CircalyLinkedList<E> {
     private Node<E> tail;
     private int size;
 
-    public CircularLinkedList(){
+    public CircalyLinkedList(){
         tail=null;
         size=0;
     }
@@ -29,7 +27,7 @@ public class CircularLinkedList<E> {
         size++;
     }
     public void addlast(E data){
-        addFirst(data);
+        addlast(data);
         tail=tail.getNext();
     }
     public E getFirst(){
@@ -71,7 +69,7 @@ public class CircularLinkedList<E> {
     public void display(){
         if (isEmpty()){
             System.out.println("List is Empty");
-             return;
+            return;
         }
         Node<E>temp=tail.getNext();
         do {
@@ -108,5 +106,4 @@ public class CircularLinkedList<E> {
         public void setNext(Node<E> next) {
             this.next = next;
         }
-    }
-}
+    }}
